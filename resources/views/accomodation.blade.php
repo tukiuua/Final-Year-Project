@@ -128,19 +128,6 @@
 
           }
       </script>
-        
-      {{-- @php
-        echo "<table>";
-        foreach ($accomodation->facilities as $facility) {
-          
-          echo "<tr> 
-                  <td> <img src=\"" .  $facility->img_path . "\"\width=\"30\" height=\"30\"></td>                                   
-                  <td>" . $facility->name . "</td>
-                </tr>";
-         }
-        echo "</table>";
-
-      @endphp --}}
 
     </div>
 

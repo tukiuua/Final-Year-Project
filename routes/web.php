@@ -41,11 +41,7 @@ Auth::routes();
     
      });
 
-     Route::get('applyAccomodation', function () {
-
-        return view('applyAccomodation');
-    
-     });
+     Route::get('applyAccomodation', 'AccomodationController@getAllAccomodations');
 
      Route::get('searchAccomodation', function () {
 
@@ -53,15 +49,18 @@ Auth::routes();
         
      });
 
-     Route::get('test', function () {
-
-        return view('test');
-        
-     });
 
      Route::resource('viewAccomodation', 'AccomodationController');
 
      Route::get('accomodation{accom}', 'AccomodationController@show');
+
+     Route::get('applyAccomodation/{accom}/rooms', 'RoomController@getRooms');
+
+     Route::post('applyAccomodation/rooms/apply', 'ApplicationRequestController@applyRoom');
+
+   
+
+
 
 
 

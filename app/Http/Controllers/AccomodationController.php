@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Accomodation;
+use App\Http\Middleware\checkUserIsAdmin;
+use Illuminate\Support\Facades\Auth;
 
 
 class AccomodationController extends Controller
@@ -15,6 +17,7 @@ class AccomodationController extends Controller
         $accomodations = Accomodation::all();
 
         return view('viewAccomodation', compact('accomodations'));
+        
     }
 
     public function show($id){
@@ -28,5 +31,13 @@ class AccomodationController extends Controller
     public function store(){
         
     }
+
+    public function getAllAccomodations(){
+
+        $accomodations = Accomodation::all();
+
+         return view('applyAccomodation', compact('accomodations'));
+    }
+         
     
 }
