@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <h1> search for accomodations </h1>
-</body>
-</html>
+@extends('layouts.app')
+@SECTION('content')
+
+ <h1 id="searchHeader"> Search for accomodation </h1>
+
+    <form class="form-wrapper" method="get" action="">
+            <input type="text" id="search" placeholder="Search for a student accomodation (The Ramada, Silver En Suite...)" required>
+            <input type="submit" value="go" id="submit">
+        </form>
+
+@endsection
+
+
+
+   
