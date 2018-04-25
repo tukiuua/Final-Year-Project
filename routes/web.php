@@ -58,6 +58,11 @@ Auth::routes();
 
      Route::post('applyAccomodation/rooms/apply', 'ApplicationRequestController@applyRoom');
 
+     Route::get('searchAccomodation/search', 'AccomodationController@searchAccomodation');
+     Route::get('searchAccomodation/{sa}/search', 'AccomodationController@searchAccomodation');
+
+
+
    
 
 

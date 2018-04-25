@@ -24,7 +24,7 @@
         </div>
       </a>
   </div>
-  </div>
+</div>
 
   <div id="accomSectionContainer">
     <div class="container2">

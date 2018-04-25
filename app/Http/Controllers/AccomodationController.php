@@ -38,6 +38,20 @@ class AccomodationController extends Controller
 
          return view('applyAccomodation', compact('accomodations'));
     }
+
+    public function searchAccomodation(Request $request){
+        $query = $request->input('query');
+        $accom= \App\Accomodation::where('accomodation_name', 'LIKE', '%' . $query . '%')
+                                    ->orWhere('address', 'LIKE', '%' . $query . '%')
+                                    ->get();
+
+        if($accom){
+            return view('searchAccomodation')->withDetails($accom)->withQuery($query);
+        }
+        return view('searchAccomodation')->withMessage("No accomodations found");
+
+       
+    }
          
     
 }
