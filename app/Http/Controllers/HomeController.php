@@ -33,7 +33,7 @@ class HomeController extends Controller
 
         } else
         {
-            return redirect('admin/dashboard');
+            return redirect('/admin/dashboard');
         }
     }
 

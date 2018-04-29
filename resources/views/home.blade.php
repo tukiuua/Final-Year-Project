@@ -13,9 +13,9 @@
         </div>
     @endif
     <div id=mainNavButtons> 
-        <button class="button"><a href="viewAccomodation">View Accomodation</a></button>
-        <button class="button"><a href="applyAccomodation">Apply For Accomodation</a></button>
-        <button class="button"><a href="searchAccomodation">Search For Accomodation</a></button>
+        <button class="button"><a href="viewAccomodation">View Accommodation</a></button>
+        <button class="button"><a href="applyAccomodation">Apply For Accommodation</a></button>
+        <button class="button"><a href="searchAccomodation">Search For Accommodation</a></button>
     </div>
 </div>
 

@@ -15,6 +15,13 @@
                     @endif
 
                     <h1> Admin User </h1>
+
+                    
+                        <button class="button"><a href="listRoom">List a room</a></button>
+                        <button class="button"><a href="removeRoom">Remove a room</a></button>
+                        <button class="button"><a href="viewApplicationRequests">View application requests</a></button>
+                  
+
                 </div>
             </div>
         </div>

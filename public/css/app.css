@@ -30,7 +30,29 @@
     margin-top:20px;
     width:380px;
   }
+  .dashboardButton{
+    padding: 15px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(6, 110, 88);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:20px;
+    width:280px;
+    height:280px;
+  }
+#dashboardButtons{
+text-align: center;
 
+
+}
   .button:hover {background-color: #3e8e41}
 
   .button:active {
@@ -506,7 +528,7 @@ label>p{
   text-align: center;
 }
 
-#table {
+.searchResults #table {
   display: table;
   
    width: 70%; 
@@ -517,7 +539,7 @@ label>p{
 
  }
 
- .caption {
+ .searchResults .caption {
    display: block;
    width: 70%;
    background: #2ab27b;
@@ -534,17 +556,17 @@ label>p{
  }
 
 
- .header-row {
+ .searchResults .header-row {
    background: #8b8b8b;
    color: #fff;
 
  }
 
-.row {
+ .searchResults .row {
   display: table-row;
 }
 
-.cell {
+.searchResults .cell {
   display: table-cell;
   
   padding: 6px; 
@@ -552,13 +574,13 @@ label>p{
   text-align: center;
 }
 
-.primary {
+.searchResults .primary {
   text-align: left;
 }
 
 
-input[type="radio"],
-input[type="checkbox"]{
+.searchResults input[type="radio"],
+.searchResults input[type="checkbox"]{
   display: none;
 }
 
@@ -569,12 +591,12 @@ input[type="checkbox"]{
     padding: 0;
   }
 
-  #table {
+  .searchResults #table {
     display: block;
     margin: 44px 0 0 0;
   }
 
-  .caption {
+  .searchResults .caption {
     position: fixed;
     top: 0;
     text-align: center;
@@ -584,18 +606,18 @@ input[type="checkbox"]{
     border-bottom: 2px solid #999;
   }
 
-  .row { 
+  .searchResults .row { 
     position: relative;
     display: block;
     border-bottom: 1px solid #ccc; 
 
   }
 
-  .header-row {
+  .searchResults .header-row {
     display: none;
   }
   
-  .cell { 
+  .searchResults .cell { 
     display: block;
 
     border: none;
@@ -605,7 +627,7 @@ input[type="checkbox"]{
     text-align: left;
   }
 
-  .primary:after {
+  .searchResults .primary:after {
     content: "";
     display: block;
     position: absolute;
@@ -620,72 +642,11 @@ input[type="checkbox"]{
 
   }
 
-  .cell:nth-of-type(n+2) { 
+  .searchResults .cell:nth-of-type(n+2) { 
     display: none; 
   }
-
-
-  input[type="radio"],
-  input[type="checkbox"] {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 99%;
-    height: 100%;
-    opacity: 0;
-  }
-  
-  input[type="radio"]:checked,
-  input[type="checkbox"]:checked {
-    z-index: -1;
-  }
-
-  input[type="radio"]:checked ~ .cell,
-  input[type="checkbox"]:checked ~ .cell {
-    display: block;
-
-    border-bottom: 1px solid #eee; 
-  }
-
-  input[type="radio"]:checked ~ .cell:nth-of-type(n+2),
-  input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2) {
-    
-    background: #e0e0e0;
-  }
-
-  input[type="radio"]:checked ~ .cell:nth-of-type(n+2):before,
-  input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2):before {
-    content: attr(data-label);
-
-    display: inline-block;
-    width: 60px;
-    background: #999;
-    border-radius: 10px;
-    height: 20px;
-    margin-right: 10px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    color: white;
-
-  }
-
-  input[type="radio"]:checked ~ .primary,
-  input[type="checkbox"]:checked ~ .primary  {
-    border-bottom: 2px solid #999;
-  }
-
-  input[type="radio"]:checked ~ .primary:after,
-  input[type="checkbox"]:checked ~ .primary:after {
-     position: absolute;
-    right:18px;
-    top:22px;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent; 
-    border-top:10px solid #ccc;
-    z-index: 2;
-  }
 }
+
 
 #accomSectionContainer_search{
 

@@ -3,7 +3,7 @@
 
 @SECTION('content')
 
-  <h3 id="addressHeader"> {{ $accomodation['accomodation_name'] }} </h3>
+  <h3 id="addressHeader">{{ $accomodation['accomodation_name'] }}</h3>
 
   <!-- Slideshow container -->
     <div class="slideshow-container">

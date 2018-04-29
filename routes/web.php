@@ -41,7 +41,7 @@ Auth::routes();
     
      });
 
-     Route::get('applyAccomodation', 'AccomodationController@getAllAccomodations');
+     Route::get('applyAccomodation', 'AccomodationController@getAllAccomodations_application');
 
      Route::get('searchAccomodation', function () {
 
@@ -59,7 +59,19 @@ Auth::routes();
      Route::post('applyAccomodation/rooms/apply', 'ApplicationRequestController@applyRoom');
 
      Route::get('searchAccomodation/search', 'AccomodationController@searchAccomodation');
-     Route::get('searchAccomodation/{sa}/search', 'AccomodationController@searchAccomodation');
+  
+//admin routes
+Route::get('admin/listRoom', function () {
+
+    return view('listRoom');
+
+ });
+
+ Route::post('/listRoom/list', 'RoomController@listRoom');
+ Route::get('admin/removeRoom', 'AccomodationController@getAllAccomodations_removeRoom');
+ Route::get('admin/removeRoom/{accom}/rooms', 'RoomController@getRooms');
+ Route::post('admin/removeRoom/remove', 'RoomController@removeRoom');
+ 
 
 
 

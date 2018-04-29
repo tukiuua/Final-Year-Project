@@ -21,8 +21,8 @@
                                 </div>
                                 <div class="row">
                                         <input type="radio" name="expand">
-                                        <span class="cell primary" data-label="Vehicle">{{$accom->accomodation_name}}</span>
-                                        <span class="cell" data-label="Exterior">{{$accom->address}}</span>
+                                        <span class="cell primary" data-label="accommName">{{$accom->accomodation_name}}</span>
+                                        <span class="cell" data-label="accommAddress">{{$accom->address}}</span>
                                 </div>
                                 <br>
                         </div>

@@ -33,7 +33,7 @@ class checkUserIsAdmin
 
         if(Auth::user() &&  Auth::user()->isAdmin == 1){
 
-           // return $next($request);
+            return $next($request);
 
         }
 

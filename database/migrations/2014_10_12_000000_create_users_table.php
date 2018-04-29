@@ -23,6 +23,21 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::table('users')->insert(
+
+            array(
+                'name' => 'admin',
+                'surname' => 'admin',
+                'studentID' => 'NULL',
+                'password' => bcrypt("admin123"),
+                'isAdmin' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+
+            )
+
+        );
     }
 
     /**
@@ -33,5 +48,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+
     }
 }

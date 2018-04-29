@@ -32,11 +32,18 @@ class AccomodationController extends Controller
         
     }
 
-    public function getAllAccomodations(){
+    public function getAllAccomodations_application(){
 
         $accomodations = Accomodation::all();
 
          return view('applyAccomodation', compact('accomodations'));
+    }
+
+    public function getAllAccomodations_removeRoom(){
+
+        $accomodations = Accomodation::all();
+
+         return view('removeRoom', compact('accomodations'));
     }
 
     public function searchAccomodation(Request $request){

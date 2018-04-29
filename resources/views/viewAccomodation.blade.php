@@ -16,10 +16,10 @@
 <div class="centreContent">
   <div id="accomSectionContainer">
     <div class="container2">
-      <img src="{{URL::asset($accomodations[0]->img_path)}}" alt="Accomodation1" width="500"height="400" >
+      <img src="{{URL::asset($accomodations[0]->img_path)}}" alt="Accommodation1" width="500"height="400" >
       <a href="accomodation1">
         <div class="overlay2">
-          <div class="text2">Accomodation 1</div>
+          <div class="text2">Accommodation 1</div>
 
         </div>
       </a>
@@ -28,10 +28,10 @@
 
   <div id="accomSectionContainer">
     <div class="container2">
-        <img src="{{URL::asset($accomodations[1]->img_path)}}" alt="Accomodation2" width="500"height="400" >
+        <img src="{{URL::asset($accomodations[1]->img_path)}}" alt="Accommodation2" width="500"height="400" >
         <a href="accomodation2">
           <div class="overlay2">
-            <div class="text2">Accomodation 2</div>
+            <div class="text2">Accommodation 2</div>
           </div>
         </a>
     </div>
@@ -39,20 +39,20 @@
 
   <div id="accomSectionContainer">
     <div class="container2">
-      <img src="{{URL::asset('insert path here')}}" alt="Accomodation3" width="500"height="400" >
+      <img src="{{URL::asset('insert path here')}}" alt="Accommodation3" width="500"height="400" >
         <a href="accomodation3">
           <div class="overlay2">
-            <div class="text2">Accomodation 3</div>
+            <div class="text2">Accommodation 3</div>
           </div>
         </a>
   </div>
   </div>
   <div id="accomSectionContainer">
     <div class="container2">
-    <img src="{{URL::asset('insert path here')}}" alt="Accomodation4" width="500"height="400" >
+    <img src="{{URL::asset('insert path here')}}" alt="Accommodation4" width="500"height="400" >
     <a href="accomodation4">
       <div class="overlay2">
-        <div class="text2">Accomodation 4</div>
+        <div class="text2">Accommodation 4</div>
       </div>
     </a>
   </div>
