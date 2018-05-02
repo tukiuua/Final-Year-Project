@@ -11,4 +11,9 @@ class Room extends Model
         return $this->BelongsTo(Accomodation::class);
         
     }
+
+    public function rating() {
+        return $this->hasMany(RoomRating::class);
+
+    }
 }

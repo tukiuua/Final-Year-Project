@@ -59,6 +59,10 @@ Auth::routes();
      Route::post('applyAccomodation/rooms/apply', 'ApplicationRequestController@applyRoom');
 
      Route::get('searchAccomodation/search', 'AccomodationController@searchAccomodation');
+
+     Route::get('rateAccomodation', 'RoomController@getOwnedRoom');
+     
+     Route::get('rate{number}', 'ratingController@rateRoom');
   
 //admin routes
 Route::get('admin/listRoom', function () {
@@ -71,6 +75,10 @@ Route::get('admin/listRoom', function () {
  Route::get('admin/removeRoom', 'AccomodationController@getAllAccomodations_removeRoom');
  Route::get('admin/removeRoom/{accom}/rooms', 'RoomController@getRooms');
  Route::post('admin/removeRoom/remove', 'RoomController@removeRoom');
+ Route::get('admin/viewAppRequests', 'ApplicationRequestController@getAllRequests');
+ Route::get('admin/approve{id}', 'ApplicationRequestController@approveRoom');
+ Route::get('admin/reject{id}', 'ApplicationRequestController@rejectRoom');
+ Route::get('viewApplicationStatus', 'ApplicationRequestController@getUserRequest');
  
 
 

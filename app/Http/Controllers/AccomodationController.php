@@ -28,6 +28,7 @@ class AccomodationController extends Controller
 
     }
 
+
     public function store(){
         
     }

@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use App\Room;
 use App\Accomodation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
 class RoomController extends Controller
@@ -23,6 +24,29 @@ class RoomController extends Controller
 
     }
 
+    public function getRoom($id){
+
+        Room::find($id)->get();
+        return room;
+
+    }
+
+    public function getOwnedRoom(){
+        $userId = Auth::user()->id;
+
+        $ownedRoom = DB::table('owns')
+        ->join('rooms', 'owns.room_id', '=', 'rooms.id')
+        ->join('users', 'owns.user_id', '=', 'users.id')
+        ->select('rooms.room_name', 'rooms.room_type', 'rooms.description')
+        ->where('owns.user_id', '=', $userId)
+        ->get();
+
+
+        return view('rateRoom', compact('ownedRoom'));
+
+
+
+    }
 
     function listRoom(Request $request) {
    

@@ -147,9 +147,17 @@
     </div>
 
     <div id="Rooms" class="tabcontent">
-      <h3>Rooms</h3>
+      <h3>Rooms</h3> 
       <br>
+      {{-- calculate average rating for each room --}}
       @foreach ($accomodation->rooms as $room) 
+      <?php
+        $sum = 0;
+        foreach ($room->rating as $index => $rating) {
+          $sum += $rating->rating;
+        }
+        $count = $room->rating->count();
+      ?>
           <div class="roomInformation">
             <h4> {{ $room->room_name }} </h4>
             <ul>
@@ -173,8 +181,10 @@
               </li> 
               <li> <strong> Weeks: </strong> {{ $room->tenancy_length }} </li>
               <li> <strong> Start Date: </strong>   {{ \Carbon\Carbon::parse($room->start_date)->format('d/m/Y')}} </li>
+              <li> <strong> Average Rating: </strong> {{ $count==0 ? "Not Rated" : ceil($sum/$count) }} </li>
             </ul>
             <p> <strong> Price Per Week: </strong> £{{ $room->price }} </p>
+
             <p> {{ $room->description }} </p>
           </div>
           <hr>

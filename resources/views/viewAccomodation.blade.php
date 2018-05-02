@@ -39,7 +39,7 @@
 
   <div id="accomSectionContainer">
     <div class="container2">
-      <img src="{{URL::asset('insert path here')}}" alt="Accommodation3" width="500"height="400" >
+      <img src="{{URL::asset($accomodations[2]->img_path)}}" alt="Accommodation3" width="500"height="400" >
         <a href="accomodation3">
           <div class="overlay2">
             <div class="text2">Accommodation 3</div>
@@ -49,7 +49,7 @@
   </div>
   <div id="accomSectionContainer">
     <div class="container2">
-    <img src="{{URL::asset('insert path here')}}" alt="Accommodation4" width="500"height="400" >
+    <img src="{{URL::asset($accomodations[3]->img_path)}}" alt="Accommodation4" width="500"height="400" >
     <a href="accomodation4">
       <div class="overlay2">
         <div class="text2">Accommodation 4</div>

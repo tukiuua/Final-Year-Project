@@ -31,6 +31,7 @@
     width:380px;
   }
   .dashboardButton{
+    
     padding: 15px 20px;
     font-size: 24px;
     cursor: pointer;
@@ -48,14 +49,27 @@
     width:280px;
     height:280px;
   }
+
+  .dashboardButton a{
+
+    color:white;
+  }
 #dashboardButtons{
 text-align: center;
 
 
 }
   .button:hover {background-color: #3e8e41}
+  .dashboardButton:hover {background-color: #3e8e41}
 
   .button:active {
+    text-decoration: none;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .dashboardButton:active {
     text-decoration: none;
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
@@ -74,7 +88,7 @@ text-align: center;
   .a, a:hover, a:visited, a:active {
 
     text-decoration: none;
-    color:#000;
+    color:rgb(255, 255, 255);
   }
 
 #mainNavButtons{
@@ -652,4 +666,49 @@ label>p{
 
 margin-left:14.3%; 
 
+}
+
+#checkStatusTable{
+  width:95%;
+  font-size:20px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+#checkStatusTable th{
+  color:#fff;
+  background-color: rgb(6, 110, 88);
+   
+   }
+#checkStatusTable td{
+
+background-color: #fff;
+ 
+ }
+ 
+
+.button5 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  padding:1%;
+}
+
+#adminButtons button{
+
+  width:100%;
+}
+
+#listRoomForm{
+
+  margin-left:20px;
+}
+#listRoomForm #submit{
+
+  font-size: 20px;
+}
+
+.checkStatusTable a{
+
+  color:black;
 }

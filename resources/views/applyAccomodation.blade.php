@@ -51,7 +51,7 @@
                 <h2 style="color:white">{{Session::get('unsuccessMsg')}} </h2>
         </div>
 @endif
-      
+
 
 
 <script>

@@ -14,7 +14,7 @@
                        
                        
                        <div class="form-group{{ $errors->has('studentID') ? ' has-error' : '' }}">
-                            <label for="studentID" class="col-md-4 control-label">Student ID</label>
+                            <label for="studentID" class="col-md-4 control-label">Username</label>
 
                             <div class="col-md-6">
                                 <input id="studentID" type="text" class="form-control" name="studentID" value="{{ old('studentID') }}" required autofocus>
